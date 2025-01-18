@@ -1,0 +1,249 @@
+changes from my pc
+==============================================================================================
+GIT
+==============================================================================================
+git config --global user.name "sabbir"
+git config --global user.email "easabbir@gmail.com"
+check configuration after setup: git config --list
+
+-----------How to pull from any repository----------
+git init
+git clone https://github.com/easabbir/performance-test-with-python-locust.git
+
+===============================================================================================
+git remote add origin https://github.com/easabbir/batch21Demo.git
+
+git remote -v
+
+git pull origin master 
+
+============================================================
+How to push to a remote repository
+
+Step: 0 Created a repository : https://github.com/easabbir/batch30-demo.git
+Step: 1 Download git and install 
+Step: 2 Created a project with public/private
+
+Step: 3 Understand the commands from here
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+Step: 4 Tell git who u are
+git config --global user.name "Sam Smith"
+git config --global user.email "sam@example.com"
+
+Step: 5 Create Local repository after installing git in windows/linux/mac
+go to the folder in command line and below command
+git init
+
+Step: 6 Add files
+git add *
+
+Step: 7 Commit
+git status
+git commit -m "first commit"
+
+Step: 8 Add repository
+git remote add origin https://github.com/easabbir/batch30-demo.git
+
+Step: 9 List all currently configured remote repositories:
+git remote -v
+
+Step: 9 Push code to repository to master
+generate token from github account
+
+git push origin master
+
+git push -u origin master
+
+========added later======
+git diff
+git log --oneline
+git checkout commitid
+
+remote
+git branch -r
+git branch -a
+git branch
+
+git branch branchname
+git checkout branchname
+git branch
+
+-------If problem faced----------
+git pull origin master --allow-unrelated-histories
+git pull origin --rebase master 
+git push -u origin master
+
+https://git-school.github.io/visualizing-git/
+
+If you want remove all local changes - including files that are untracked by git - from your working copy, simply stash them:
+git stash push --include-untracked
+
+If you don't need them anymore, you now can drop that stash:
+git stash drop
+
+Listing your stashes
+git stash list
+
+Retrieving stashed changes
+git stash apply and git stash pop
+A stash reapplies the changes while pop removes the changes from the stash and reapplies them to the working copy. Popping is preferred if you don't need the stashed changes to be reapplied more than once.
+git stash pop stash@{1} or
+git stash apply stash@{1}
+
+Cleaning up the stash
+It is good practice to remove stashes that are no longer needed. You must do this manually with the following commands:
+git stash clear empties the stash list by removing all the stashes.
+git stash drop <stash_id> deletes a particular stash from the stash list.
+REFERENCE: https://opensource.com/article/21/4/git-stash
+
+Downloading and pulling
+-----------------------
+Step: 9 Download from a repository (first time) otherwise git pull
+git clone 
+
+Step: 10 Take latest changes in the framework
+git pull origin master 
+
+Branches
+-----------------------------
+
+Step: 11 creating a new branch
+git checkout -b <branchname>
+
+Step: 12 Switching to a newly created branch
+git checkout <branchname>
+
+Step: 13 to list all the branch 
+git branch
+
+Step: 13 Push to the newly created branch
+git push origin <branchname>
+
+Step: 14 After the branch is ready to merge to master
+switch to master branch first: 	git checkout master
+get latest code: 	git pull origin master
+merge: 			git merge <branchname>
+
+
+Delete Branches
+-----------------------------
+git branch -d <branchname>
+
+Reset 
+------------------------
+git fetch origin
+git reset --hard origin/master
+git reset --hard HEAD
+
+--------add unnecessary file stash and pull from server--------
+git add * 
+git stash
+git pull
+
+
+Example of my student after git class
+[1]https://github.com/musthafiz/Load-testing-for-OpenCart-Website
+[2]https://github.com/Akash-Ahmed-CSE
+[3]https://github.com/Rasujon3/Jmeter_Performance_Testing_fakestoreapi
+[4]https://github.com/Mahmuduls1995/Performance-Testing-With-JMeter-BookingApp
+
+
+ai site gulo diye creative readme file generate kora jay....
+md file er syntax jana na thakle ai generator site gulo helpful
+[1] https://rahuldkjain.github.io/gh-profile-readme-generator/
+[2]https://gprm.itsvg.in/
+[3]https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-personal-account-settings/about-your-personal-dashboard
+
+Professional git site
+https://github.com/dotnet/BenchmarkDotNet
+
+Readme file: https://gist.github.com/PurpleBooth/109311bb0361f32d87a2
+
+
+
+
+
+
+
+
+
+
+
+=========Keep this handy============
+𝗠𝗼𝘀𝘁 𝗨𝘀𝗲𝗱 𝗚𝗶𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀
+
+
+1. 𝐠𝐢𝐭 𝐝𝐢𝐟𝐟: Show file differences not yet staged.
+2. 𝐠𝐢𝐭 𝐜𝐨𝐦𝐦𝐢𝐭 -𝐚 -𝐦 "𝐜𝐨𝐦𝐦𝐢𝐭 𝐦𝐞𝐬𝐬𝐚𝐠𝐞": Commit all tracked changes with a message.
+3. 𝐠𝐢𝐭 𝐜𝐨𝐦𝐦𝐢𝐭 --𝐚𝐦𝐞𝐧𝐝: Modify the last commit.
+4. 𝐠𝐢𝐭 𝐬𝐭𝐚𝐭𝐮𝐬: Show the state of your working directory.
+5. 𝐠𝐢𝐭 𝐚𝐝𝐝 𝐟𝐢𝐥𝐞_𝐩𝐚𝐭𝐡: Add file(s) to the staging area.
+6. 𝐠𝐢𝐭 𝐜𝐡𝐞𝐜𝐤𝐨𝐮𝐭 -𝐛 𝐛𝐫𝐚𝐧𝐜𝐡_𝐧𝐚𝐦𝐞: Create and switch to a new branch.
+7. 𝐠𝐢𝐭 𝐜𝐡𝐞𝐜𝐤𝐨𝐮𝐭 𝐛𝐫𝐚𝐧𝐜𝐡_𝐧𝐚𝐦𝐞: Switch to an existing branch.
+8. 𝐠𝐢𝐭 𝐜𝐡𝐞𝐜𝐤𝐨𝐮𝐭 <𝐜𝐨𝐦𝐦𝐢𝐭>: Switches the working directory to a specific commit.
+9. 𝐠𝐢𝐭 𝐩𝐮𝐬𝐡 𝐨𝐫𝐢𝐠𝐢𝐧 𝐛𝐫𝐚𝐧𝐜𝐡_𝐧𝐚𝐦𝐞: Push a branch to a remote.
+10. 𝐠𝐢𝐭 𝐩𝐮𝐥𝐥: Fetch and merge remote changes.
+11. 𝐠𝐢𝐭 𝐟𝐞𝐭𝐜𝐡: Fetch changes from the remote repository without merging.
+12. 𝐠𝐢𝐭 𝐫𝐞𝐛𝐚𝐬𝐞 -𝐢: Rebase interactively, rewrite commit history.
+13. 𝐠𝐢𝐭 𝐫𝐞𝐛𝐚𝐬𝐞 𝐛𝐫𝐚𝐧𝐜𝐡_𝐧𝐚𝐦𝐞: Rebase the current branch onto another branch.
+14. 𝐠𝐢𝐭 𝐜𝐥𝐨𝐧𝐞: Create a local copy of a remote repo.
+15. 𝐠𝐢𝐭 𝐦𝐞𝐫𝐠𝐞: Merge branches together.
+16. 𝐠𝐢𝐭 𝐥𝐨𝐠 --𝐬𝐭𝐚𝐭: Show commit logs with stats.
+17. 𝐠𝐢𝐭 𝐬𝐭𝐚𝐬𝐡: Stash changes for later.
+18. 𝐠𝐢𝐭 𝐬𝐭𝐚𝐬𝐡 𝐩𝐨𝐩: Apply and remove stashed changes.
+19. 𝐠𝐢𝐭 𝐬𝐡𝐨𝐰 𝐜𝐨𝐦𝐦𝐢𝐭_𝐢𝐝: Show details about a commit.
+20. 𝐠𝐢𝐭 𝐫𝐞𝐬𝐞𝐭 𝐇𝐄𝐀𝐃~1: Undo the last commit, preserving changes locally.
+21. 𝐠𝐢𝐭 𝐛𝐫𝐚𝐧𝐜𝐡 -𝐃 𝐛𝐫𝐚𝐧𝐜𝐡_𝐧𝐚𝐦𝐞: Delete a branch forcefully.
+22. 𝐠𝐢𝐭 𝐫𝐞𝐬𝐞𝐭: Undo commits by moving branch reference.
+23. 𝐠𝐢𝐭 𝐫𝐞𝐯𝐞𝐫𝐭 𝐜𝐨𝐦𝐦𝐢𝐭_𝐢𝐝: Create a new commit that undoes the changes of a specific commit.
+24. 𝐠𝐢𝐭 𝐜𝐡𝐞𝐫𝐫𝐲-𝐩𝐢𝐜𝐤 𝐜𝐨𝐦𝐦𝐢𝐭_𝐢𝐝: Apply changes from a specific commit.
+24. 𝐠𝐢𝐭 𝐛𝐫𝐚𝐧𝐜𝐡: Lists branches.
+26. 𝐠𝐢𝐭 𝐫𝐞𝐬𝐞𝐭 --𝐬𝐨𝐟𝐭 𝐇𝐄𝐀𝐃^: Undo the last commit, but keep the changes.
+27. 𝐠𝐢𝐭 𝐫𝐞𝐬𝐞𝐭 --𝐡𝐚𝐫𝐝: Resets everything to a previous commit, erasing all uncommitted changes.
+28: 𝐠𝐢𝐭 𝐛𝐫𝐚𝐧𝐜𝐡 --𝐬𝐞𝐭-𝐮𝐩𝐬𝐭𝐫𝐞𝐚𝐦-𝐭𝐨 𝐫𝐞𝐦𝐨𝐭𝐞_𝐛𝐫𝐚𝐧𝐜𝐡: Sets the upstream branch to the specified 
+
+
+==============================
+
+Learn Git in 60 Seconds
+
+1. Version Control: Git is a version control system that tracks changes to your code over time.
+
+2. Repository: A repository (repo) is a folder where Git tracks your files and changes.
+
+3. Initialize: Use git init to turn a folder into a Git repository.
+
+4. Clone: Copy an existing repository using git clone <URL>.
+
+5. Staging: Use git add <file> to stage changes for the next commit.
+
+6. Commit: Save your changes with a message using git commit -m "Your message".
+
+7. Branches: Use git branch <name> to create branches and isolate changes.
+
+8. Switch Branches: Move between branches using git checkout <branch> or git switch <branch>.
+
+9. Merge: Combine changes from different branches using git merge <branch>.
+
+10. Status: Check the current state of your repository with git status.
+
+11. Log: View commit history using git log.
+
+12. Pull: Fetch and update your local repository with remote changes using git pull.
+
+13. Push: Upload your local commits to a remote repository with git push.
+
+14. Conflict Resolution: Resolve merge conflicts when changes overlap between branches.
+
+15. Ignore Files: Use a .gitignore file to prevent specific files from being tracked.
+
+16. Revert Changes: Undo changes with git restore or reset commits with git reset.
+
+17. Collaboration: Collaborate with others by working on the same repository.
+
+18. Tagging: Mark specific commits using git tag <tagname> for releases.
+
+19. Check Differences: Use git diff to compare changes between commits or branches.
+
+20. Clean History: Use tools like git rebase or git squash to simplify commit history.
